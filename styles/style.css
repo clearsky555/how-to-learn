@@ -94,6 +94,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
 }
 
 .two-columns__brief {
@@ -101,6 +102,9 @@
   color: #2f80ed;
   line-height: 1.2;
   font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+
 }
 
 .two-columns__main-text {
@@ -108,6 +112,7 @@
   min-width: 784px;
   display: flex;
   flex-direction: column;
+
 }
 
 .two-columns__paragraph {
@@ -116,11 +121,7 @@
   margin: 0;
 }
 
-.two-columns__paragraph-2 {
-  margin: 30px 0;
-}
-
-.span-accent {
+.two-columns__span-accent {
   font-weight: bold;
 }
 
@@ -128,7 +129,7 @@
   margin-top: 100px;
 }
 
-.digits__title {
+.section-title {
   width: 60%;
   margin: 0 auto;
   text-align: center;
@@ -137,7 +138,7 @@
   font-weight: bold;
 }
 
-.digits__subtitle {
+.section-subtitle {
   width: 60%;
   margin: 20px auto 0 auto;
   text-align: center;
@@ -146,7 +147,7 @@
   font-weight: normal;
 }
 
-.digits__table {
+.table {
   margin: 0 auto 0 auto;
   width: 1100px;
   display: flex;
@@ -159,14 +160,6 @@
   width: 250px;
 }
 
-.table__text-1 {
-  margin: 20px 0;
-}
-
-.table__text-2 {
-  margin-bottom: 0;
-}
-
 .table__heading {
   margin: 0;
   line-height: 1.15;
@@ -174,6 +167,7 @@
 }
 
 .table__text {
+  margin: 20px 0 0 0;
   line-height: 1.2;
   font-size: 18px;
 }
@@ -239,26 +233,11 @@
   z-index: 1;
 }
 
-.kaufman-title__theme_dark {
-  margin: 90px auto 20px auto;
-  width: 60%;
-  text-align: center;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: bold;
+.section-title_theme_dark {
+  margin-top: 90px;
 }
 
-
-.kaufman-subtitle__theme_dark {
-  margin: 0 auto;
-  width: 60%;
-  text-align: center;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-}
-
-.table__theme_dark {
+.table_theme_dark {
   margin: 0 auto 90px auto;
 }
 
@@ -267,33 +246,6 @@
   margin-top: 80px;
 }
 
-/* и элемента с модификатором вида ключ-значение
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-} этот код был образцом элемента с модификатором вида ключ-значение */
-
-
-
-.table__heading_theme_dark {
-  padding-top: 80px;
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: left;
-}
-
-.table__text_theme_dark {
-  padding-top: 20px;
-  text-align: left;
-  vertical-align: top;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-
-}
 .kaufman__triangle {
   background-image: url(../images/kaufman-triangle.svg);
   background-size: 877px 877px;
@@ -328,7 +280,7 @@
   justify-content: space-between;
 }
 
-.footer__logo_place_footer {
+.logo_place_footer {
   background-image: url(../images/logo_place_footer.svg);
   width: 183px;
   height: 35px;
@@ -352,24 +304,24 @@
 
 }
 
-.column_heading {
+.footer__column_heading {
   margin-top: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
 }
 
-.column_links {
+.footer__column_links {
   margin: 20px 0 16px 0;
   display: flex;
   flex-direction: column;
 }
 
-.social_icon {
+.footer__social_icon {
   margin-right: 10px;
 }
 
-.column_link {
+.footer__column_link {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
